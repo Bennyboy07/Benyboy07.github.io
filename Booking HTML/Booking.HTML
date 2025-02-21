@@ -1,0 +1,111 @@
+<HTML>
+<head>
+  <style>
+ body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.button {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'SLANT';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+}
+
+input, select, textarea {
+  border-radius: 10px;
+  border: 5px solid #4431d7;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+
+button {
+  height: 50px;
+  background: #FF331F;
+  border: none;
+  color: black;
+  font-size: 1.25em;
+  font-family: 'Star7';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+  background: #00ff84;
+}
+
+  </style>
+</head>
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    </div>
+
+
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="07516000000" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+    </div>
+   
+    <div class="elem-group inlined">
+      <label for="adult">Adults</label>
+      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+    </div>
+
+    <div class="elem-group inlined">
+      <label for="child">Children</label>
+      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+    </div>
+
+    <div class="elem-group inlined">
+      <label for="Date">Date</label>
+      <input type="date" id="Date" name="checkin" required>
+    </div>
+
+    <div class="elem-group inlined">
+    <button type="submit">BOOK NOW</button>
+  </div>
+
+  </form>
+
+
+</HTML>
